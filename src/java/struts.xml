@@ -12,5 +12,15 @@
         <action name="InsertarLibro" method="salvar" class="com.lenguajes.a80703.application.action.InsertarLibroAction">
             <result name="input" type="dispatcher">insertarLibro.jsp</result>
         </action>
+        <action name="MantenerAutores" class="com.lenguajes.a80703.application.action.MantenimientoAutoresAction">
+            <result name="input" type="dispatcher">mantenimientoAutores.jsp</result>
+        </action>
+        <action name="EditarAutor" class="com.lenguajes.a80703.application.action.EditarAutorAction">
+            <result name="input" type="dispatcher">editarAutor.jsp</result>
+        </action>
+        <action name="GuardarAutor" method="editar" class="com.lenguajes.a80703.application.action.EditarAutorAction">
+            <result name="input" type="dispatcher">editarAutor.jsp</result>
+        </action>
+        
     </package>
 </struts>
